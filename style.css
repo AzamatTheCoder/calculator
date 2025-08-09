@@ -1,0 +1,120 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+}
+
+.calculyator {
+    width: 320px;
+    background: #181818;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    padding: 20px 15px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.screen {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 0 10px;
+    background: #222;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 10px;
+    outline: none;
+    pointer-events: none;
+}
+
+.tugmalar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn-gold {
+    height: 55px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background: #ff9500;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-gold:active {
+    background: #cc7a00;
+}
+
+.btn-grey {
+    height: 55px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-grey:active {
+    background: #444;
+}
+
+.tozalash {
+    height: 55px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background: #e74c3c;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.tozalash:active {
+    background: #c0392b;
+}
+
+.hisoblash {
+    height: 55px;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px;
+    background: #34c759;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s;
+    grid-column: span 2;
+}
+.hisoblash:active {
+    background: #28a745;
+}
+
+@media (max-width: 350px) {
+    .calculyator {
+        width: 98vw;
+        padding: 10px 2vw;
+    }
+    .screen {
+        font-size: 1.2rem;
+        height: 40px;
+    }
+    .btn-gold, .btn-grey, .tozalash, .hisoblash {
+        font-size: 1rem;
+        height: 40px;
+    }
+}
